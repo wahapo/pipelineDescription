@@ -1,0 +1,9 @@
+annotations:
+  screwdriver.cd/pipelineDescription: hello
+
+jobs:
+  main:
+    requires: [~pr,~commit]
+    image: node:14
+    steps:
+      - ls
